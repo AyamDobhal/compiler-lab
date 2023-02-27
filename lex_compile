@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mkdir -p out
+lex -o out/$1.c $1.l
+gcc out/$1.c -o out/$1
+echo "$1 compiled and saved to out/$1"
